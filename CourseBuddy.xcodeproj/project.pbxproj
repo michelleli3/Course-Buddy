@@ -18,6 +18,7 @@
 		F04A8C8D1BF95F54008AA5A4 /* Course.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04A8C8B1BF95F54008AA5A4 /* Course.cpp */; };
 		F04A8C901BF9604D008AA5A4 /* Course.h in Sources */ = {isa = PBXBuildFile; fileRef = F04A8C8F1BF9604D008AA5A4 /* Course.h */; };
 		F04A8C941BF9670E008AA5A4 /* SearchResultsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F04A8C931BF9670E008AA5A4 /* SearchResultsVC.m */; };
+		F0D74A491BF9703400B9CD0D /* CourseDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D74A481BF9703400B9CD0D /* CourseDetailsVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		F04A8C911BF96056008AA5A4 /* Review.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Review.h; sourceTree = "<group>"; };
 		F04A8C921BF9670E008AA5A4 /* SearchResultsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsVC.h; sourceTree = "<group>"; };
 		F04A8C931BF9670E008AA5A4 /* SearchResultsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsVC.m; sourceTree = "<group>"; };
+		F0D74A471BF9703400B9CD0D /* CourseDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailsVC.h; sourceTree = "<group>"; };
+		F0D74A481BF9703400B9CD0D /* CourseDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailsVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +117,8 @@
 				F00542761BF95E6600FE276B /* ViewController.h */,
 				F00542771BF95E6600FE276B /* ViewController.m */,
 				F00542791BF95E6600FE276B /* Main.storyboard */,
+				F0D74A471BF9703400B9CD0D /* CourseDetailsVC.h */,
+				F0D74A481BF9703400B9CD0D /* CourseDetailsVC.m */,
 				F04A8C921BF9670E008AA5A4 /* SearchResultsVC.h */,
 				F04A8C931BF9670E008AA5A4 /* SearchResultsVC.m */,
 				F04A8C911BF96056008AA5A4 /* Review.h */,
@@ -287,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F04A8C8D1BF95F54008AA5A4 /* Course.cpp in Sources */,
+				F0D74A491BF9703400B9CD0D /* CourseDetailsVC.m in Sources */,
 				F00542781BF95E6600FE276B /* ViewController.m in Sources */,
 				F04A8C901BF9604D008AA5A4 /* Course.h in Sources */,
 				F00542751BF95E6600FE276B /* AppDelegate.m in Sources */,
