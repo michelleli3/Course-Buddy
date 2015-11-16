@@ -16,7 +16,7 @@
 		F005428B1BF95E6600FE276B /* CourseBuddyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F005428A1BF95E6600FE276B /* CourseBuddyTests.m */; };
 		F00542961BF95E6600FE276B /* CourseBuddyUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F00542951BF95E6600FE276B /* CourseBuddyUITests.m */; };
 		F04A8C8D1BF95F54008AA5A4 /* Course.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04A8C8B1BF95F54008AA5A4 /* Course.cpp */; };
-		F04A8C901BF9604D008AA5A4 /* Review.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04A8C8F1BF9604D008AA5A4 /* Review.cpp */; };
+		F04A8C901BF9604D008AA5A4 /* Course.h in Sources */ = {isa = PBXBuildFile; fileRef = F04A8C8F1BF9604D008AA5A4 /* Course.h */; };
 		F04A8C941BF9670E008AA5A4 /* SearchResultsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F04A8C931BF9670E008AA5A4 /* SearchResultsVC.m */; };
 /* End PBXBuildFile section */
 
@@ -55,8 +55,7 @@
 		F00542951BF95E6600FE276B /* CourseBuddyUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CourseBuddyUITests.m; sourceTree = "<group>"; };
 		F00542971BF95E6600FE276B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F04A8C8B1BF95F54008AA5A4 /* Course.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Course.cpp; sourceTree = "<group>"; };
-		F04A8C8E1BF95F62008AA5A4 /* Course.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Course.h; path = ../Course.h; sourceTree = "<group>"; };
-		F04A8C8F1BF9604D008AA5A4 /* Review.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Review.cpp; sourceTree = "<group>"; };
+		F04A8C8F1BF9604D008AA5A4 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
 		F04A8C911BF96056008AA5A4 /* Review.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Review.h; sourceTree = "<group>"; };
 		F04A8C921BF9670E008AA5A4 /* SearchResultsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultsVC.h; sourceTree = "<group>"; };
 		F04A8C931BF9670E008AA5A4 /* SearchResultsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultsVC.m; sourceTree = "<group>"; };
@@ -118,8 +117,7 @@
 				F04A8C921BF9670E008AA5A4 /* SearchResultsVC.h */,
 				F04A8C931BF9670E008AA5A4 /* SearchResultsVC.m */,
 				F04A8C911BF96056008AA5A4 /* Review.h */,
-				F04A8C8F1BF9604D008AA5A4 /* Review.cpp */,
-				F04A8C8E1BF95F62008AA5A4 /* Course.h */,
+				F04A8C8F1BF9604D008AA5A4 /* Course.h */,
 				F04A8C8B1BF95F54008AA5A4 /* Course.cpp */,
 				F005427C1BF95E6600FE276B /* Assets.xcassets */,
 				F005427E1BF95E6600FE276B /* LaunchScreen.storyboard */,
@@ -290,7 +288,7 @@
 			files = (
 				F04A8C8D1BF95F54008AA5A4 /* Course.cpp in Sources */,
 				F00542781BF95E6600FE276B /* ViewController.m in Sources */,
-				F04A8C901BF9604D008AA5A4 /* Review.cpp in Sources */,
+				F04A8C901BF9604D008AA5A4 /* Course.h in Sources */,
 				F00542751BF95E6600FE276B /* AppDelegate.m in Sources */,
 				F00542721BF95E6600FE276B /* main.m in Sources */,
 				F04A8C941BF9670E008AA5A4 /* SearchResultsVC.m in Sources */,
