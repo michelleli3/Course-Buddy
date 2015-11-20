@@ -18,6 +18,11 @@ DerivedData
 *.xcuserstate
 .DS_Store
 /Server
+composer.json
+composer.lock
+/CourseBuddyTests
+/CourseBuddyUITests
+/vendor
 
 # CocoaPods
 #
