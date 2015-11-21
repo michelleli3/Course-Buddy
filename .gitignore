@@ -23,6 +23,8 @@ composer.lock
 /CourseBuddyTests
 /CourseBuddyUITests
 /vendor
+DB_Schema.rtf
+*.swp
 
 # CocoaPods
 #
