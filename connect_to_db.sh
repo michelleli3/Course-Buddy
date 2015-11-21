@@ -1,0 +1,1 @@
+heroku pg:psql --app coursebuddy-db
