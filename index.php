@@ -20,5 +20,9 @@ $school = $_GET['school'];
 $category = $_GET['category'];
 $query = $_GET['query'];
 
+echo $school;
+echo $category;
+echo $query;
+
 ?>
 </html>
