@@ -12,13 +12,29 @@ function connectToDB(){
 }
 
 $connection = connectToDB();
-//$stmt = $pd->prepare("SELECT * FROM posts ORDER BY date_posted DESC");
 
 //Variables: school, category, query
+
+$stmt->bindParam(":search_content", $search_content);
 
 $school = $_GET['school'];
 $category = $_GET['category'];
 $query = $_GET['query'];
+
+if($query == '' || $category == ''){
+    $stmt = $pd->prepare("SELECT * FROM Courses ORDER BY date_posted DESC");
+}
+else{
+    $stmt = $pd->prepare("SELECT * FROM Courses WHERE course_name LIKE '%' || :query || '%' OR professor LIKE '%' || :query || '%'");
+    $stmt->bindParam(":query", $query);
+}
+
+$stmt->execute() or die("Failure");
+$result = $stmt->fetchAll();
+
+foreach($result as $line){
+    echo $result;
+}
 
 echo $school;
 echo $category;
