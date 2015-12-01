@@ -25,6 +25,7 @@ composer.lock
 /vendor
 DB_Schema.rtf
 *.swp
+Example.webloc
 
 # CocoaPods
 #

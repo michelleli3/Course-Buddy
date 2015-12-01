@@ -2,6 +2,8 @@
 <title>API Endpoint</title>
 <?php
 
+ini_set('display_errors', 'On');
+
 function connectToDB(){
     $HOST =  "ec2-54-83-202-64.compute-1.amazonaws.com";
     $USER = "zuobdlxluumpis";
@@ -13,32 +15,26 @@ function connectToDB(){
 
 $connection = connectToDB();
 
-//Variables: school, category, query
-
-$stmt->bindParam(":search_content", $search_content);
-
 $school = $_GET['school'];
-$category = $_GET['category'];
 $query = $_GET['query'];
 
-if($query == '' || $category == ''){
-    $stmt = $pd->prepare("SELECT * FROM Courses ORDER BY date_posted DESC");
+$stmt = "";
+if($query == ''){
+    echo "EMPTY";
+    $stmt = $connection ->prepare("SELECT (course_name, professor, semesters_offered) FROM Courses");
 }
 else{
-    $stmt = $pd->prepare("SELECT * FROM Courses WHERE course_name LIKE '%' || :query || '%' OR professor LIKE '%' || :query || '%'");
+    $stmt = $connection ->prepare("SELECT (course_name, professor, semesters_offered) FROM Courses WHERE course_name LIKE '%' || :query || '%' OR professor LIKE '%' || :query || '%'");
     $stmt->bindParam(":query", $query);
 }
 
 $stmt->execute() or die("Failure");
-$result = $stmt->fetchAll();
+$results = $stmt->fetchAll();
 
-foreach($result as $line){
-    echo $result;
+foreach($results as $row){
+    echo "<br>";
+    echo $row[0];
 }
-
-echo $school;
-echo $category;
-echo $query;
 
 ?>
 </html>
